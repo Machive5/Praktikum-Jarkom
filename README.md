@@ -9,8 +9,8 @@ Kelompok 3 - Tang Crimping
 
 | No. | Nama | NRP |
 |----|----------------------------------|------------|
-| 1 | Fito Dwi Ardiansah | 5024241053 |
-| 2 | Abrar Rafi Dwianto | 5024241046 |
+| 1 |  Abrar Rafi Dwianto |  5024241046 |
+| 2 |  Fito Dwi Ardiansah |  5024241053 | 
 | 3 | Nania Aurelia Dewi Cahyani | 5024241059 |
 
 ---
