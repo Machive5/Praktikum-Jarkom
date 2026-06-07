@@ -1,79 +1,42 @@
-\section{Hasil Tugas Modul}
+# Hasil Tugas Modul
 
 Bagian ini memuat hasil dari pengerjaan tugas tambahan yang diberikan dalam modul praktikum serta penjelasan dari hasil konfigurasi yang sudah dilakukan.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{topologi_pnetlab.jpeg}
-    \caption{Topologi jaringan pada PNETLab}
-\end{figure}
+## Topologi Jaringan
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{konfigurasi_mikrotik_ip_route.jpeg}
-    \caption{Konfigurasi IP address dan routing pada MikroTik}
-\end{figure}
+![Topologi jaringan pada PNETLab](topologi_pnetlab.jpeg)
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{konfigurasi_fortigate_port1_wan.jpeg}
-    \caption{Konfigurasi interface port1 pada FortiGate}
-\end{figure}
+## Konfigurasi MikroTik
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{konfigurasi_cisco_interface_brief.jpeg}
-    \caption{Konfigurasi interface pada Cisco Router}
-\end{figure}
+![Konfigurasi IP address dan routing pada MikroTik](konfigurasi_mikrotik_ip_route.jpeg)
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{konfigurasi_web_server_dmz_index.jpeg}
-    \caption{Konfigurasi halaman web server pada server DMZ}
-\end{figure}
+## Konfigurasi FortiGate
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_ping_gateway_lan_192_168_10_1.jpeg}
-    \caption{Pengujian koneksi client LAN ke gateway LAN}
-\end{figure}
+![Konfigurasi interface port1 pada FortiGate](konfigurasi_fortigate_port1_wan.jpeg)
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_ping_gateway_fortigate_lan_10_20_20_1.jpeg}
-    \caption{Pengujian koneksi Cisco Router ke FortiGate}
-\end{figure}
+## Konfigurasi Cisco Router
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_ping_mikrotik_fortigate_10_10_10_2.jpeg}
-    \caption{Pengujian koneksi MikroTik ke FortiGate}
-\end{figure}
+![Konfigurasi interface pada Cisco Router](konfigurasi_cisco_interface_brief.jpeg)
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_ping_client_wan_gateway_172_16_100_1.jpeg}
-    \caption{Pengujian koneksi client WAN ke gateway MikroTik}
-\end{figure}
+## Konfigurasi Web Server DMZ
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_ping_dmz_192_168_20_10.jpeg}
-    \caption{Pengujian koneksi ke server DMZ}
-\end{figure}
+![Konfigurasi halaman web server pada server DMZ](konfigurasi_web_server_dmz_index.jpeg)
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_web_dmz_via_192_168_20_10.jpeg}
-    \caption{Hasil akses web server DMZ melalui alamat 192.168.20.10}
-\end{figure}
+## Hasil Pengujian
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.85\linewidth]{hasil_web_vip_via_10_10_10_2.jpeg}
-    \caption{Hasil akses web server DMZ melalui VIP FortiGate}
-\end{figure}
+![Pengujian koneksi client LAN ke gateway LAN](hasil_ping_gateway_lan_192_168_10_1.jpeg)
 
+![Pengujian koneksi Cisco Router ke FortiGate](hasil_ping_gateway_fortigate_lan_10_20_20_1.jpeg)
+
+![Pengujian koneksi MikroTik ke FortiGate](hasil_ping_mikrotik_fortigate_10_10_10_2.jpeg)
+
+![Pengujian koneksi client WAN ke gateway MikroTik](hasil_ping_client_wan_gateway_172_16_100_1.jpeg)
+
+![Pengujian koneksi ke server DMZ](hasil_ping_dmz_192_168_20_10.jpeg)
+
+![Hasil akses web server DMZ melalui alamat 192.168.20.10](hasil_web_dmz_via_192_168_20_10.jpeg)
+
+![Hasil akses web server DMZ melalui VIP FortiGate](hasil_web_vip_via_10_10_10_2.jpeg)
 \section{Analisis dan Kesimpulan}
 
 Pada praktikum ini dilakukan konfigurasi jaringan menggunakan beberapa perangkat, yaitu MikroTik sebagai router ISP, FortiGate sebagai firewall utama, Cisco Router sebagai router internal, serta beberapa client pada jaringan LAN, WAN, dan DMZ.
