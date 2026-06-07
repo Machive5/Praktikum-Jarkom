@@ -37,7 +37,6 @@ Bagian ini memuat hasil dari pengerjaan tugas tambahan yang diberikan dalam modu
 ![Hasil akses web server DMZ melalui alamat 192.168.20.10](hasil_web_dmz_via_192_168_20_10.jpeg)
 
 ![Hasil akses web server DMZ melalui VIP FortiGate](hasil_web_vip_via_10_10_10_2.jpeg)
-\section{Analisis dan Kesimpulan}
 
 Pada praktikum ini dilakukan konfigurasi jaringan menggunakan beberapa perangkat, yaitu MikroTik sebagai router ISP, FortiGate sebagai firewall utama, Cisco Router sebagai router internal, serta beberapa client pada jaringan LAN, WAN, dan DMZ.
 
