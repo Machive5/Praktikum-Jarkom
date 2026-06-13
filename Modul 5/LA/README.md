@@ -1,5 +1,4 @@
-# Laporan Akhir Praktikum Jaringan Komputer — Modul 5
-## Implementasi Jaringan Enterprise HQ–Branch dengan VRRP, ISC-DHCP, FortiGate, GRE Tunnel, dan OSPF Multivendor
+# Tugas Modul Praktikum Jaringan Komputer — Modul 5
 
 ---
 
