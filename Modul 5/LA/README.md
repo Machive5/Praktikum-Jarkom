@@ -194,3 +194,12 @@
 ### 3.4 Pengujian Layanan Web Server Aplikasi (HTTP Protocol)
 * **Screenshot Akses Web Server Jakarta dari Browser Client Surabaya**
   ![Akses Web Nginx](https://github.com/user-attachments/assets/610f851b-7140-4026-904c-7260acfbb350)
+
+---
+
+## 4. Penjelasan Singkat
+Sistem jaringan enterprise HQ-Branch yang menghubungkan Jakarta dan Surabaya ini diimplementasikan dengan mengintegrasikan tiga pilar arsitektur utama, yaitu redundansi gateway, keamanan perimeter, dan interkoneksi dinamis antar-site. Di sisi internal Jakarta (HQ), kendali dan ketersediaan gateway dioptimalkan melalui protokol VRRP (Virtual Router Redundancy Protocol) multivendor antara Cisco Router yang bertindak sebagai Master untuk VLAN 10 dan 60, serta MikroTik Router sebagai Master untuk VLAN 20. Mekanisme ini menjamin bahwa jika salah satu gateway fisik mengalami kegagalan, gateway cadangan akan langsung mengambil alih fungsi IP Virtual secara instan tanpa menginterupsi konektivitas client. Distribusi IP address untuk client di jaringan internal Jakarta ini dikelola secara terpusat oleh ISC-DHCP Server pada Ubuntu Server di VLAN 60, yang jalurnya dijembatani menggunakan fitur DHCP Relay pada masing-masing router gateway.
+
+Untuk mengamankan lalu lintas data di kedua ujung jaringan, FortiGate Firewall diterapkan sebagai perangkat perimeter utama (edge gateway). Melalui konfigurasi Firewall Policy yang ketat dan penerapan NAT (Network Address Translation) ke arah MikroTik ISP, FortiGate memastikan seluruh paket data lokal diinspeksi sekaligus memungkinkan client ber-IP privat dari kedua site untuk mengakses jaringan internet publik secara aman. Sementara itu, interkoneksi jarak jauh yang memisahkan kantor Jakarta dan Surabaya dijembatani secara virtual menggunakan teknologi GRE (Generic Routing Encapsulation) Tunnel yang dibangun langsung antar-perangkat FortiGate melintasi infrastruktur ISP.
+
+Agar pertukaran informasi jaringan antar-cabang dapat berjalan secara dinamis dan adaptif, protokol routing OSPF (Open Shortest Path First) dijalankan di atas pipa virtual GRE Tunnel tersebut. Melalui OSPF, FortiGate Jakarta secara otomatis mempelajari subnet milik Surabaya, begitu pula sebaliknya, dengan bantuan fitur redistribute static route. Integrasi menyeluruh dari seluruh teknologi ini menghasilkan infrastruktur jaringan enterprise yang stabil, aman, dan memiliki redundansi tinggi, yang dibuktikan dengan keberhasilan komunikasi end-to-end antar-client, serta kelancaran akses layanan HTTP Nginx Web Server Jakarta langsung dari browser client di Surabaya.
