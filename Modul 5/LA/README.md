@@ -19,8 +19,9 @@ Tugas Modul Praktikum Jaringan Komputer Modul 5
 **2. Bukti Konfigurasi per Tugas Modul**
 **Tugas Modul 1 - Konfigurasi Cisco Switch Jakarta**
 1. Screenshot 'show vlan brief'
+   
 <img width="903" height="504" alt="d75ddee2-1792-43d8-b715-d4ccdb87c82a" src="https://github.com/user-attachments/assets/3f777ff3-af3c-46a2-bd4b-0b6e1a61c37c" />
-2. Screenshot 'show interfaces trunk'
+3. Screenshot 'show interfaces trunk'
 <img width="901" height="499" alt="5a94c4f1-ecfd-4f9e-aa78-9edb0743ef54" src="https://github.com/user-attachments/assets/c6d804bc-41f5-4cca-b746-21a89e187434" />
 
 **Tugas Modul 2 - Konfigurasi Cisco Router Jakarta**
